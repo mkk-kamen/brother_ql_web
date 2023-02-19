@@ -57,13 +57,13 @@ def get_label_context(request):
     font_style  = d.get('font_family').rpartition('(')[2].rstrip(')')
     context = {
       'text':          d.get('text', None),
-      'font_size': int(d.get('font_size', 100)),
+      'font_size':     int(d.get('font_size', 100)),
       'font_family':   font_family,
       'font_style':    font_style,
       'label_size':    d.get('label_size', "62"),
       'kind':          label_type_specs[d.get('label_size', "62")]['kind'],
-      'margin':    int(d.get('margin', 10)),
-      'threshold': int(d.get('threshold', 70)),
+      'margin':        int(d.get('margin', 10)),
+      'threshold':     int(d.get('threshold', 70)),
       'align':         d.get('align', 'center'),
       'orientation':   d.get('orientation', 'standard'),
       'margin_top':    float(d.get('margin_top',    24))/100.,
@@ -107,7 +107,8 @@ def get_label_context(request):
 def create_label_im(text, **kwargs):
     label_type = kwargs['kind']
     im_font = ImageFont.truetype(kwargs['font_path'], kwargs['font_size'])
-    im = Image.new('L', (20, 20), 'white')
+    #im = Image.new('L', (20, 20), 'white')
+    im = Image.open("static/images/template.png")
     draw = ImageDraw.Draw(im)
     # workaround for a bug in multiline_textsize()
     # when there are empty lines in the text:
@@ -125,7 +126,8 @@ def create_label_im(text, **kwargs):
     elif kwargs['orientation'] == 'rotated':
         if label_type in (ENDLESS_LABEL,):
             width = textsize[0] + kwargs['margin_left'] + kwargs['margin_right']
-    im = Image.new('RGB', (width, height), 'white')
+    #im = Image.new('RGB', (width, height), 'white')
+    im = Image.open("static/images/template.png")
     draw = ImageDraw.Draw(im)
     if kwargs['orientation'] == 'standard':
         if label_type in (DIE_CUT_LABEL, ROUND_DIE_CUT_LABEL):

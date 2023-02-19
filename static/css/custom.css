@@ -15,3 +15,11 @@
 textarea#labelText {
   resize: none;
 }
+
+.jumbotron {
+  display: none;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+  position: initial;
+}
