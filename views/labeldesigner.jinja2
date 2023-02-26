@@ -8,6 +8,14 @@
   <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">History of printed labels</a></p>-->
 {% endblock %}
 
+{% macro def_predefined(name, address, location) -%}
+  <option value="{{ name }}${{ address }}${{ location }}">{{ name }}</option>
+{%- endmacro -%}
+
+{% macro def_predefined(name, additional, address, location) -%}
+  <option value="{{ name }}${{ additional }}${{ address }}${{ location }}">{{ name }}</option>
+{%- endmacro -%}
+
 {% block content %}
   <div class="row">
     <div class="col-md-4">
@@ -110,6 +118,30 @@
         <label for="labelText">Label Text:</label>
         <textarea rows="7" id="labelText" name="labelText" class="form-control" onChange="preview()" onInput="preview()">{{ text }}</textarea>
       </fieldset>
+      <form action="?" method="get">
+        <fieldset class="form-group">
+          <label for="text">Vordefinierte Etiketten:</label>
+          <select id="text" name="text" class="form-control">
+          <option value="">- bitte auswählen -</option>
+          <option value="HÄVG Rechenzentrum GmbH$Edmund-Rumpeler-Str. 2$51149 Köln">HÄVG Rechenzentrum GmbH</option>
+          <option value="Kassenärztliche Vereinigung Westfalen-Lippe$Robert-Schimrigk-Str. 4-6$44141 Dortmund">Kassenärztliche Vereinigung Westfalen-Lippe</option>
+          {% for category in ['Pflegedienst', 'Apotheke', 'Krankenkasse', 'Heim', 'Podologie', 'Versorgungsamt'] %}
+            <optgroup label="{{ category }}">
+              {% for entry in predefinedLabel[category] | sort(attribute='name') -%}
+                {% if entry.additional is defined %}
+                  {{ def_predefined(entry.name,entry.additional,entry.address,entry.location) }}
+                {% else %}
+                  {{ def_predefined(entry.name,entry.address,entry.location) }}
+                {% endif %}
+              {% endfor %}
+            </optgroup>
+          {%  endfor %}
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <input type="submit" class="btn btn-primary btn-block btn-lg" title="Übernehmen" value="Übernehmen" name="Übernehmen">
+        </fieldset>
+      </form>
     </div>
     <div class="col-md-4">
       <fieldset class="form-group">

@@ -1,0 +1,43 @@
+Pflegedienst:
+  - name: Diakoniestation Bönen Flierich
+    address: Rosenstr. 15a
+    location: 59199 Bönen
+  - name: confido Care GmbH
+    address: Siemenstr. 57
+    location: 48153 Münster
+  - name: Transcare Service GmbH
+    address: Postfach 2416
+    location: 56514 Neuwied
+  - name: Häuslicher Pflegedienst Voegeding
+    address: Lessingstr. 108
+    location: 59192 Bergkamen
+  - name: Pflegebüro Lautenbach
+    address: Robert-Koch-Str. 15
+    location: 59174 Kamen
+  - name: AWO Seniorenheim
+    address: Eichholzstraße 11a-c
+    location: 59199 Bönen
+Apotheke:
+  - name: Adler Apotheke
+    address: Markt 6
+    location: 59174 Kamen
+Krankenkasse:
+  - name: Techniker Krankenkasse
+    address: Ruhrallee 9
+    location: 44139 Dortmund
+Heim:
+  - name: Laureos Res. Heeren-Werve
+    address: Westf. Straße 44
+    location: 59174 Kamen
+Podologie:
+  - name: Podologie Krafzig
+    address: Eichholzplatz 2
+    location: 59199 Bönen
+  - name: Podologie Suttrop
+    address: Holbeinstr. 10a
+    location: 59423 Unna
+Versorgungsamt:
+  - name: Stadt Dortmund
+    additional: Gemeinsames Versorgungsamt der Städte Do, Bo, Ha
+    address: Untere Brinkstraße 80
+    location: 44141 Dortmund

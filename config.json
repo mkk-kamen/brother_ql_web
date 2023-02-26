@@ -1,0 +1,25 @@
+{
+  "SERVER": {
+    "PORT": 8013,
+    "HOST": "termine.mkk.int",
+    "LOGLEVEL": "ERROR",
+    "ADDITIONAL_FONT_FOLDER": true
+  },
+  "PRINTER": {
+    "MODEL": "QL-1060N",
+    "PRINTER": "tcp://192.168.29.152:9100"
+  },
+  "LABEL": {
+    "DEFAULT_SIZE": "39x90",
+    "DEFAULT_ORIENTATION": "standard",
+    "DEFAULT_FONT_SIZE": 28,
+    "DEFAULT_FONTS": [
+      {"family":"Fira Sans", "style": "Regular"}
+    ]
+  },
+  "WEBSITE": {
+    "HTML_TITLE": "Label Designer",
+    "PAGE_TITLE": "Brother QL Label Designer",
+    "PAGE_HEADLINE": "Design your label and print it…"
+  }
+}

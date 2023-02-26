@@ -5,7 +5,7 @@
 This is a web service to print labels on Brother QL label printers.
 """
 
-import sys, logging, random, json, argparse
+import sys, logging, random, json, argparse, yaml
 from io import BytesIO
 
 from bottle import run, route, get, post, response, request, jinja2_view as view, static_file, redirect
@@ -29,6 +29,11 @@ except FileNotFoundError as e:
     with open('config.example.json', encoding='utf-8') as fh:
         CONFIG = json.load(fh)
 
+with open("data/predefinedLabels.yml", "r") as stream:
+    try:
+        predefinedLabel = yaml.safe_load(stream)
+    except yaml.YAMLError as exc:
+        print(exc)
 
 @route('/')
 def index():
@@ -46,7 +51,8 @@ def labeldesigner():
             'fonts': FONTS,
             'label_sizes': LABEL_SIZES,
             'website': CONFIG['WEBSITE'],
-            'label': CONFIG['LABEL']}
+            'label': CONFIG['LABEL'],
+            'predefinedLabel': predefinedLabel}
 
 def get_label_context(request):
     """ might raise LookupError() """
@@ -298,7 +304,7 @@ def main():
         CONFIG['LABEL']['DEFAULT_FONTS'] = {'family': family, 'style': style}
         sys.stderr.write('The default font is now set to: {family} ({style})\n'.format(**CONFIG['LABEL']['DEFAULT_FONTS']))
 
-    run(host=CONFIG['SERVER']['HOST'], port=PORT, debug=DEBUG)
+    run(host=CONFIG['SERVER']['HOST'], port=PORT, debug=DEBUG, threaded=False, processes=3)
 
 if __name__ == "__main__":
     main()
