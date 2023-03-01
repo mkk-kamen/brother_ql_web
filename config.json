@@ -12,7 +12,7 @@
   "LABEL": {
     "DEFAULT_SIZE": "39x90",
     "DEFAULT_ORIENTATION": "standard",
-    "DEFAULT_FONT_SIZE": 28,
+    "DEFAULT_FONT_SIZE": 34,
     "DEFAULT_FONTS": [
       {"family":"Fira Sans", "style": "Regular"}
     ]

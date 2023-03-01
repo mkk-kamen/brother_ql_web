@@ -72,10 +72,10 @@ def get_label_context(request):
       'threshold':     int(d.get('threshold', 70)),
       'align':         d.get('align', 'center'),
       'orientation':   d.get('orientation', 'standard'),
-      'margin_top':    float(d.get('margin_top',    24))/100.,
-      'margin_bottom': float(d.get('margin_bottom', 45))/100.,
-      'margin_left':   float(d.get('margin_left',   35))/100.,
-      'margin_right':  float(d.get('margin_right',  35))/100.,
+      'margin_top':    float(d.get('margin_top',    45))/100.,
+      'margin_bottom': float(d.get('margin_bottom', 10))/100.,
+      'margin_left':   float(d.get('margin_left',   0))/100.,
+      'margin_right':  float(d.get('margin_right',  0))/100.,
     }
     context['margin_top']    = int(context['font_size']*context['margin_top'])
     context['margin_bottom'] = int(context['font_size']*context['margin_bottom'])
@@ -138,7 +138,7 @@ def create_label_im(text, **kwargs):
     if kwargs['orientation'] == 'standard':
         if label_type in (DIE_CUT_LABEL, ROUND_DIE_CUT_LABEL):
             vertical_offset  = (height - textsize[1])//2
-            vertical_offset += (kwargs['margin_top'] - kwargs['margin_bottom'])//2
+            vertical_offset += (45 - 0)//2
         else:
             vertical_offset = kwargs['margin_top']
         horizontal_offset = max((width - textsize[0])//2, 0)
@@ -149,7 +149,7 @@ def create_label_im(text, **kwargs):
             horizontal_offset = max((width - textsize[0])//2, 0)
         else:
             horizontal_offset = kwargs['margin_left']
-    offset = horizontal_offset, vertical_offset
+    offset = 30, vertical_offset
     draw.multiline_text(offset, text, kwargs['fill_color'], font=im_font, align=kwargs['align'])
     return im
 
