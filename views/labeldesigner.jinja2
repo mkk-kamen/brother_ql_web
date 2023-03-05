@@ -125,7 +125,7 @@
           <option value="">- bitte auswählen -</option>
           <option value="HÄVG Rechenzentrum GmbH$Edmund-Rumpeler-Str. 2$51149 Köln">HÄVG Rechenzentrum GmbH</option>
           <option value="Kassenärztliche Vereinigung Westfalen-Lippe$Robert-Schimrigk-Str. 4-6$44141 Dortmund">Kassenärztliche Vereinigung Westfalen-Lippe</option>
-          {% for category in ['Pflegedienst', 'Apotheke', 'Krankenkasse', 'Heim', 'Podologie', 'Versorgungsamt'] %}
+          {% for category in ['Pflegedienst', 'Apotheke', 'Krankenkasse', 'Praxis', 'Versorgungsamt', 'Sontiges'] %}
             <optgroup label="{{ category }}">
               {% for entry in predefinedLabel[category] | sort(attribute='name') -%}
                 {% if entry.additional is defined %}

@@ -1,43 +1,330 @@
 Pflegedienst:
-  - name: Diakoniestation Bönen Flierich
-    address: Rosenstr. 15a
+  - name: AWO Seniorenzentrum
+    address: Eichholzsstraße 11a-c
     location: 59199 Bönen
-  - name: confido Care GmbH
-    address: Siemenstr. 57
-    location: 48153 Münster
-  - name: Transcare Service GmbH
-    address: Postfach 2416
-    location: 56514 Neuwied
+  - name: Haus Volkermann
+    address: Heerenerstraße 23
+    location: 59174 Kamen
+  - name: Laureos Residenz Heeren-Werve
+    address: Westfälische Straße 44
+    location: 59174 Kamen
+  - name: Diakoniestation Bönen Flierich
+    address: Rosenstraße 15a
+    location: 59199 Bönen
+  - name: GUK GmbH
+    address: Fritz-Erler-Straße 53
+    location: 59174 Kamen
   - name: Häuslicher Pflegedienst Voegeding
-    address: Lessingstr. 108
+    address: Lessingstraße 108
     location: 59192 Bergkamen
   - name: Pflegebüro Lautenbach
-    address: Robert-Koch-Str. 15
+    address: Robert-Koch-Straße 15
     location: 59174 Kamen
-  - name: AWO Seniorenheim
-    address: Eichholzstraße 11a-c
-    location: 59199 Bönen
+  - name: Confido Care GmbH
+    address: Siemensstraße 57
+    location: 48153 Münster
+  - name: Lebensluft
+    address: Käthe-kollwitz-Ring 32
+    location: 59423 Unna
+  - name: KK Unna Palliativnetz GbR
+    address: Morgenstraße 3
+    location: 59423 Unna
+  - name: PKD Unna
+    address: Morgenstraße 3
+    location: 59423 Unna
 Apotheke:
   - name: Adler Apotheke
     address: Markt 6
+    location: 95174 Kamen
+  - name: Ahorn Apotheke
+    address: Bronckhorststraße 4
+    location: 44319 Dortmund
+  - name: Alte Apotheke  Ahlen
+    address: Markt 7
+    location: 59227 Ahlen
+  - name: Alte Apotheke  Lünen
+    address: Alsenstraße 3
+    location: 44532 Lünen
+  - name: Apotheke am Quadrat
+    address: Kampstraße 8
     location: 59174 Kamen
+  - name: Vom Stein Apotheke
+    address: Cappenbergerstraße 52
+    location: 44535 Lünen
+  - name: Apotheke am Brunnen
+    address: Bahnhofstraße 77
+    location: 59199 Bönen
+  - name: Apotheke am Kämertor
+    address: Adenauerstraße 16
+    location: 59174 Kamen
+  - name: Apotheke am Solebad
+    address: Steinstraße 42
+    location: 59368 Werne
+  - name: Apotheke am Steinhaus
+    address: Moormannplatz 16
+    location: 59368 Werne
+  - name: Apotheke Rünther Straße
+    address: Rüntherstraße 65
+    location: 59192 Bergkamen
+  - name: Apotheke am Bahnhof
+    address: Bahnhofstraße 114
+    location: 59199 Bönen
+  - name: Barbara Apotheke Kamen
+    address: Westfälischestraße 44a
+    location: 59174 Kamen
+  - name: Barbara Apotheke Lünen
+    address: Preußenstraße 73-75
+    location: 44532 Lünen
+  - name: Bären Apotheke Bönen
+    address: Bahnhofstraße 46
+    location: 59199 Bönen
+  - name: Bären Apotheke Unna
+    address: Zechenstraße 8
+    location: 59425 Unna
+  - name: Bären Apotheke Selm
+    address: Ludgeristraße 67
+    location: 59379 Selm
+  - name: Bienen Apotheke
+    address: Husenerstraße 50
+    location: 44319 Dortmund
+  - name: Burg Apotheke
+    address: Bahnhofstraße 26
+    location: 59423 Unna
+  - name: Campus Apotheke
+    address: Falkstraße 4
+    location: 59423 Unna
+  - name: Christophorus Apotheke
+    address: Steinstraße 28
+    location: 59368 Werne
+  - name: Dr.Coens Ring Apotheke
+    address: Berliner Allee 20
+    location: 59425 Unna
+  - name: Eulen Apotheke
+    address: Hertinger Straße 18
+    location: 59423 Unna
+  - name: Hellweg Apotheke
+    address: Wannweg 44
+    location: 59427 Unna
+  - name: Kaiserau Apotheke
+    address: Einsteinstraße 1
+    location: 59174 Kamen
+  - name: Kant Apotheke
+    address: Am Römerberg 30
+    location: 59192 Bergkamen
+  - name: Marien Apotheke
+    address: Bahnhofstraße 153
+    location: 59199 Bönen
+  - name: Markt Apotheke
+    address: Adolf-Damaschke-Straße 2
+    location: 44532 Lünen
+  - name: Michael Apotheke
+    address: Färberstraße 23
+    location: 44329 Dortmund
+  - name: Mozart Apotheke
+    address: Nordring 35
+    location: 59423 Unna
+  - name: Mühlen Apotheke
+    address: Massener Hellweg 27
+    location: 59427 Unna
+  - name: Pinguin Apotheke
+    address: Wilhelmstraße 197
+    location: 59067 Hamm
+  - name: Platanen Apotheke
+    address: Präsidentenstraße 45
+    location: 59192 Bergkamen
+  - name: Prisma Apotheke
+    address: Geschwister-Scholl-Straße 4
+    location: 59192 Bergkamen
+  - name: Rathaus Apotheke
+    address: Markt 2
+    location: 59174 Kamen
+  - name: Ring Apotheke
+    address: Bahnhofstraße 41
+    location: 59423 Unna
+  - name: Römerberg Apotheke
+    address: Am Römerberg 33
+    location: 59192 Bergkamen
+  - name: Ruhr Apotheke
+    address: Im Stift 14
+    location: 58730 Fröndenberg
+  - name: Salinen Apotheke
+    address: Blumenstraße 2
+    location: 59425 Unna
+  - name: Spitzweg Apotheke
+    address: Wickeder Hellweg 108
+    location: 44319 Dortmund
+  - name: Steinapotheke
+    address: Cappenbergerstraße 52
+    location: 44534 Lünen
+  - name: Süggel Apotheke
+    address: Bebelstraße 48
+    location: 44532 Lünen
+  - name: Tauben Apotheke
+    address: Markt Königsborn 2
+    location: 59425 Unna
+  - name: Vital Apotheke
+    address: Herbert-Wehner-Straße 3
+    location: 59174 Kamen
+  - name: Besamex
+    address: Im Hollandshagen 1-3
+    location: 21436 Marschacht
 Krankenkasse:
+  - name: AOK NordWest
+    address: Märkische Straße 2
+    location: 59423 Unna
+  - name: Barmer
+    address: Hertinger Straße 21
+    location: 59423 Unna
+  - name: BKK VDN
+    address: Rosenweg 15
+    location: 58239 Schwerte
+  - name: BIG Direkt Gesund
+    address: Rheinischestraße 1
+    location: 44137 Dortmund
+  - name: Mercedes-Benz-BKK Düsseldorf
+    additional: Gebäude 104 Randbau
+    address: Rather Straße 51
+    location: 40476 Düsseldorf
+  - name: Continentale Versicherung a.G.
+    address: Königswall 22
+    location: 44137 Dortmund
+  - name: DAK-Gesundheit
+    address: Bahnhofstraße 76
+    location: 59423 Unna
+  - name: Debeka BKK
+    address: Im Metternicher Feld 50
+    location: 56072 Koblenz
+  - name: HKK Münster
+    address: Von-Steuben-Straße 10
+    location: 48143 Münster
+  - name: IKK Classic
+    address: Nordring 12
+    location: 59423 Unna
+  - name: Knappschaft Essen
+    additional: Kranken und PV
+    location: 45095 Essen
+  - name: Knappschaft
+    additional: Geschäftsstelle Unna
+    address: Kamenerstraße 110
+    location: 59425 Unna
+  - name: Novitas BKK
+    address: Stefanstraße 2
+    location: 44135 Dortmund
   - name: Techniker Krankenkasse
     address: Ruhrallee 9
     location: 44139 Dortmund
-Heim:
-  - name: Laureos Res. Heeren-Werve
-    address: Westf. Straße 44
+  - name: Viactiv Krankenkasse
+    address: Stehfenstraße71
+    location: 59439 Holzwickede
+  - name: ZPD NRW
+    address: Schifferstraße 10
+    location: 47059 Duisburg
+  - name: AKP Plus
+    address: Im Hemsack 15b
     location: 59174 Kamen
-Podologie:
+Praxis:
+  - name: Physiotherpaie Albring
+    address: Münsterstraße 1l
+    location: 44534 Lünen
+  - name: Physiotherapie & Naturheilkunde Mirjana Slacanin
+    address: Westenmauer 45
+    location: 59174 Kamen
+  - name: Physiotherapie Sobel
+    address: Schattweg 10
+    location: 59174 Kamen
+  - name: Podologie Jansen
+    address: Kirchstraße 12
+    location: 44532 Lünen
   - name: Podologie Krafzig
     address: Eichholzplatz 2
     location: 59199 Bönen
   - name: Podologie Suttrop
-    address: Holbeinstr. 10a
+    address: Holbeinstraße 10a
     location: 59423 Unna
+  - name: Katharinen-Hospital Unna
+    address: Postfach 1651
+    location: 59406 Unna
+  - name: Elena Rahn
+    address: Häupenweg 3
+    location: 59192  Bergkamen
 Versorgungsamt:
-  - name: Stadt Dortmund
-    additional: Gemeinsames Versorgungsamt der Städte Do, Bo, Ha
-    address: Untere Brinkstraße 80
+  - name: Agentur für Arbeit Hamm
+    additional: An den ärztl. Dienst
+    adress: Bismarckstraße 2
+    location: 59065 Hamm
+  - name: BGW Bezirksverwaltung
+    adress: Universitätsstraße 78
+    location: 44789 Bochum
+  - name: Bürgeramt Pelkum
+    adress: Kamenerstraße 117
+    location: 59077 Hamm
+  - name: DAVASO GmbH
+    additional: Abteilung DMP
+    adress: Postfach 50 06 55
+    location: 04305 Leipzig
+  - name: Deutsche Rentenversicherung Westfalen
+    additional: Medizinische Steuerstelle
+    adress: Gartenstraße 194
+    location: 48147 Münster
+  - name: Finanzamt Hamm
+    adress: Grünstraße 2
+    location: 59065 Hamm
+  - name: Kreis Unna-Der Landrat
+    additional: Fachbereich Gesundheit Vertrauliche Arztsache
+    adress: Platanenallee 16
+    location: 59423 Unna
+  - name: Kreis Recklinghausen
+    additional: Gesundheitsamt
+    adress: Bahnhofstraße 98
+    location: 44575 Castop-Rauxel
+  - name: Kreis Soest
+    additional: Schwerbehindertenrecht
+    adress: Postfach 17 52
+    location: 59491 Soest
+  - name: Kreis Unna
+    additional: Fachbereich Familie & Jugend
+    adress: Hansastraße 4
+    location: 59425 Unna
+  - name: Kreis Unna
+    additional: Schwerbehindertenrecht
+    adress: Postfach 21 12
+    location: 59411 Unna
+  - name: Kreisstadt Unna
+    adress: Postfach 21 13
+    location: 59411 Unna
+  - name: Landgericht Dortmund
+    adress: Postfach 105044
+    location: 44127 Dortmund
+  - name: Landschaftsverband
+    additional: Westfalen-Lippe
+    adress: Freiherr-vom-Stein-Platz 1
+    location: 44147 Münster
+  - name: MD Westfalen Lippe
+    additional: Mitteilungsmanagement
+    adress: Roddestraße 12
+    location: 48153 Münster
+  - name: Sozialgericht Dortmund
+    adress: Ruhrallee 1-3
+    location: 44139 Dortmund
+  - name: Sozialgericht Münster
+    adress: Postfach 7120
+    location: 48038 Münster
+  - name: Sozialmedizinischer Dienst
+    additional: Kompetenzcenter Digitalisierung
+    location: 45093 Essen
+  - name: Stadt Hamm
+    additional: 17-174-SchwbR
+    adress: Postfach 2449
+    location: 59014 Hamm
+  - name: Stadt Dortmund Sozialamt
+    additional: Gemeinsames Versorgungsamt der Städte Dortmund, Bochum & Hagen
+    adress: Untere Brinkstrasse 80
     location: 44141 Dortmund
+Sontiges:
+  - name: Fleischacker GmbH
+    address: An der Silberkuhle 18
+    location: 58239 Schwerte
+  - name: Roche Diab Care
+    additional: Service Versorgungsmanagement, Gebäude 211-3
+    address: Sandhoferstraße 116
+    location: 68305 Mannheim
